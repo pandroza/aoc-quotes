@@ -3,57 +3,17 @@
   --my-color2: #483d8b;
   --my-color3: #9991cf;
 }
-@import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
 html {
   font-size: 10px;
 }
 body {
   /* Native font stack https://getbootstrap.com/docs/4.2/content/reboot/#native-font-stack */
-  font-family: "Teko", sans-serif;
+  //font-family: "Teko", sans-serif;
   font-size: 1.6rem;
   line-height: 1.5;
   color: #333;
   background: white;
   margin: 0;
   height:2000px;
-}
-#doodle {
-  position: fixed;
-  z-index: -1;
-  background: #cecae8;
-}
-css-doodle {
-  --rule1: (
-    @grid: 8 / 100vmax; 
-    background: hsla(@r(100), 85%, @r(90%, 100%), @r(0.9)); 
-    @even {
-      background:#483d8b;
-       } 
-    @row (3) {background:#9991cf; } 
-    @size: @r(1vmax, 10vmax);
-      @shape: star 10;
-  animation: test1 infinite @r(100s, 150s) linear; 
-  @keyframes test1 {
-    0% {
-      opacity: 0;
-      transform: translate3d(@r(150px), @r(200px), 0) rotate(@r(360deg));
-    } 
-    2% {
-      opacity: 1;
-    } 
-    50% {
-      transform:
-      translate3d(@r(-500%, 3000%), @r(-500%, 1000%), 0);
-    } 
-    98% {
-      opacity: 1;
-    } 
-    100% {
-      opacity: 0; 
-      transform: translate3d(@r(150px), @r(200px), 0)
-      rotate(@r(360deg));
-    }
-  }
-  );
 }
