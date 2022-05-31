@@ -1,6 +1,6 @@
 import React from "react";
 import "./index.css";
-
+import require from './require';
 import doodle from "./doodle";
 
 const gridSize = 2;
