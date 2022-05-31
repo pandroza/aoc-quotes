@@ -1,5 +1,6 @@
 import './App.css';
-import 'css-doodle';
+const $ = window.$;
+//import 'css-doodle';
 
 function App() {
   return (
