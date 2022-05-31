@@ -1,5 +1,5 @@
 import './App.css';
-const doodle = require('css-doodle');
+import 'css-doodle';
 
 function App() {
   return (
