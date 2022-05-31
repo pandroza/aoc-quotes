@@ -1,19 +1,10 @@
-:root {
-  --my-color1: #cecae8;
-  --my-color2: #483d8b;
-  --my-color3: #9991cf;
-}
-
-html {
-  font-size: 10px;
+.App {
+  font-family: sans-serif;
+  text-align: center;
 }
 body {
-  /* Native font stack https://getbootstrap.com/docs/4.2/content/reboot/#native-font-stack */
-  //font-family: "Teko", sans-serif;
-  font-size: 1.6rem;
-  line-height: 1.5;
-  color: #333;
-  background: white;
-  margin: 0;
-  height:2000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
 }
