@@ -1,15 +1,25 @@
-import './App.css';
-import 'css-doodle';
+import React from "react";
+import "./index.css";
 
-function App() {
+import doodle from "./doodle";
+
+const gridSize = 2;
+const gridGap = "2";
+
+const background = () => "red";
+
+const FancyDoodle = doodle`
+  :doodle {
+    @grid: ${gridSize} / 200px;
+    grid-gap: ${gridGap}px;
+  }
+  background: @pick(${background}, pink);
+`;
+
+export default function App() {
   return (
-    <css-doodle>{`
-      :doodle {
-        @grid: 2 / 200px;
-        grid: 1px;
-      }
-      background: @pick(red, pink);
-    `}</css-doodle>
+    <div className="App">
+      <FancyDoodle />
+    </div>
   );
 }
-export default App;
